@@ -1,0 +1,79 @@
+/* full-week.html css */
+
+header {
+    margin-bottom: 64px;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(190, 95, 95);
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+    color: rgb(92, 89, 94);
+}
+
+header p {
+    margin-bottom: 24px;
+}
+
+#description {
+    margin: 12px 0;
+    /* 
+    Margin Collapsing에 대해 알아보기 위해..
+    블록요소에만 마진 겹침이 발생함.
+    display가 inline-block 일때는 발생하지 않음.
+    */
+}
+
+ol {
+    list-style-type: none;
+    width: 500px;
+    margin: 36px auto 0 auto;
+    padding: 0;
+}
+
+li {
+    margin: 30px;
+    padding: 16px;
+    list-style-type: none;
+    background-color: rgb(223, 136, 124);
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* X오프셋,Y오프셋,퍼지게,컬러 */
+}
+
+a {
+    padding: 12px 80px;
+    /*     border: 8px solid rgb(215, 174, 193); */
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: rgb(205, 51, 51);
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: rgb(150, 63, 63);
+}
+
+h2 {
+    color: rgb(78, 13, 5);
+    font-family: "Oswald", sans-serif;
+}
+
+main p {
+    margin: 12px;
+    color: rgb(71, 29, 22);
+    font-weight: normal;
+}
+
+.highlight-goal {
+    background-color: rgb(218, 103, 87);
+}

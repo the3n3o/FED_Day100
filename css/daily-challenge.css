@@ -1,0 +1,38 @@
+/* index.html css */
+
+main {
+    width: 1000px;
+    margin: 200px auto 72px auto;
+    padding: 24px;
+    background-color: rgb(211, 121, 121);
+    border: 5px solid rgb(44, 44, 44);
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(44, 44, 44);
+    margin-top: -134px;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(31, 25, 25);
+}
+
+a {
+    color: rgb(216, 51, 131);
+}
+
+.highlight-date {
+    color: rgb(138, 38, 38);
+}
+
+#todays-challenge {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 52px;
+}

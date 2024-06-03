@@ -1,0 +1,35 @@
+/* share.css */
+
+body {
+    text-align: center;
+    background-color: rgb(233, 215, 207);
+    margin: 50px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: rgb(54, 134, 97);
+    font-family: "danfo", serif;
+    font-size: 50px;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+a {
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    margin: 0px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
