@@ -1,0 +1,90 @@
+/* index.css */
+
+header h1 {
+    color: #4725b1;
+    font-size: 48px;
+}
+
+header img {
+    width: 300px;
+}
+
+main {
+    background-color: #703bd4;
+    width: 700px;
+    margin: 32px auto;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    color: rgb(248, 241, 255);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    /* padding-left: 21px;  */
+    /* .highlight_list의 마커 스타일을 border-left로 
+    주기 때문에 각 list에 대한 패딩이 들어가야 함으로 
+    ul이 아닌 li 안에 왼쪽 패딩을 줌 */
+    list-style-type: none;
+}
+
+li {
+    margin: 14px 0px;
+    padding-left: 10px; /* 하이라이트 될 리스트의 좌측 보더가 마커기능을 할 것이기 때문에 개별적 패딩이 필요 */
+    border-left: 5px solid transparent;
+}
+
+.highlight_list {
+    color: rgb(255, 237, 177);
+    border-color: rgb(247, 209, 85);
+    /* border-left: 5px solid rgb(247, 209, 85); */
+    /* 그러나 특정 list에만 border-left를 주면 다른 list와 글자 시작 위치가(들여쓰기) 맞지 않음으로 list 전체에 border-left를 주고 투명으로 바꾼뒤
+    .highlight_list 만 보더컬러를 주면 되는것. */
+}
+
+p a,
+.download a {
+    background-color: #fce6bd;
+    color: rgb(36, 3, 102);
+    padding: 2px 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+a:hover, a:active {
+    background-color: #ffc75f;
+}
+
+.download, footer{
+    text-align: center;
+}
+
+.download a {
+    background-color: #fec32e;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: rgb(66, 51, 4);
+    font-weight: normal;
+}
+
+.download a:hover,
+.download a:active {
+    background-color: rgb(255, 187, 58);
+}
+
+footer {
+    margin-bottom: 100px;
+}
+
+footer p {
+    color: rgb(131, 113, 149);
+}
+
+/* #highlight {
+    font-weight: bold;
+    -> strong 태그로 대체할 수 있음 (em은 강조보단 그냥 굵게 표시)
+} */
