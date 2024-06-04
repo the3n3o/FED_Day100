@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 2d85e5a0925118e4af093a60efafd5e80894ef9d n3o <the3n3o@gmail.com> 1717508136 +0900	commit (initial): added test.txt file
+2d85e5a0925118e4af093a60efafd5e80894ef9d c93c31c6d327fa4542c25ba39d608c7b49b1b726 n3o <the3n3o@gmail.com> 1717508477 +0900	commit: changed test.txt and added second-commit.txt
+c93c31c6d327fa4542c25ba39d608c7b49b1b726 c93c31c6d327fa4542c25ba39d608c7b49b1b726 n3o <the3n3o@gmail.com> 1717508792 +0900	Branch: renamed refs/heads/master to refs/heads/main
+c93c31c6d327fa4542c25ba39d608c7b49b1b726 7112261dca461be50355ca07f2c7a2e83c7b0c2c n3o <the3n3o@gmail.com> 1717509278 +0900	merge feature: Fast-forward
+7112261dca461be50355ca07f2c7a2e83c7b0c2c 318ad712b490c58c6ed2b465b31181027cbed1c8 n3o <the3n3o@gmail.com> 1717509437 +0900	commit: updated test.txt
+318ad712b490c58c6ed2b465b31181027cbed1c8 052ce030590436f0edf80aaf767402c2ef832839 n3o <the3n3o@gmail.com> 1717509910 +0900	commit (merge): merged text.txt from feature
