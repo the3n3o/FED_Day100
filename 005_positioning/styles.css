@@ -1,0 +1,29 @@
+p {
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    margin: 0;
+    padding: 70px 0;
+    font-weight: bold;
+}
+
+#container {
+    border: 15px solid rgb(248, 105, 105);
+}
+
+#one,
+#two,
+#three {
+    color: white;
+}
+
+#one {
+    background-color: rgb(108, 45, 255);
+}
+
+#two {
+    background-color: rgb(132, 79, 255);
+}
+
+#three {
+    background-color: rgb(161, 120, 255);
+}
