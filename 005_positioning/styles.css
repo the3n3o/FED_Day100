@@ -27,6 +27,9 @@ p {
     background-color: rgb(132, 79, 255);
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #three {
