@@ -13,8 +13,8 @@ main {
 }
 
 #main-header {
-    height: 80px;
-    padding: 0 20px;
+    height: 5rem;
+    padding: 0 5%;
     background-color: #1b1917;
     display: flex;
     align-items: center;
@@ -22,13 +22,13 @@ main {
 }
 
 #main-header ul {
-    font-size: 22px;
+    font-size: 1.25rem;
     display: flex;
     padding: 0;
 }
 
 #main-header li {
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 #main-header nav a:hover {
@@ -40,7 +40,7 @@ main {
 }
 
 #page-logo {
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -55,5 +55,5 @@ a {
 }
 
 li {
-    list-style-type: none;
+    list-style: none;
 }
