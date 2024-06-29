@@ -4,9 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
         <!-- CSS -->
         <link rel="stylesheet" href="./styles.css" />
         <title>HTML Forms</title>
@@ -15,6 +18,44 @@
         <form action="/009_web-forms/" method="get">
             <label for="username">Your Name</label>
             <input type="text" name="user-name" id="username" />
+            <label for="useremail">Your email address</label>
+            <input type="email" name="user-email" id="useremail" />
+            <label for="userage">Your age</label>
+            <input type="number" step="1" name="user-age" id="userage" />
+            <label for="userpassword">Your password</label>
+            <input type="password" name="user-password" id="userpassword" />
+            <label for="userbirthdate">Your birthdate</label>
+            <input type="date" name="user-birthdate" id="userbirthdate" />
+            <hr />
+            <h2>How should we verify your account?</h2>
+
+            <div class="form-control-inline">
+                <input
+                    type="radio"
+                    id="verify-text-message"
+                    name="verify"
+                    value="text-message"
+                />
+                <label for="verify-text-message">Via text message (SMS)</label>
+            </div>
+            <div class="form-control-inline">
+                <input
+                    type="radio"
+                    id="verify-phone"
+                    name="verify"
+                    value="phone"
+                />
+                <label for="verify-phone">Via a phone call</label>
+            </div>
+            <div class="form-control-inline">
+                <input
+                    type="radio"
+                    id="verify-email"
+                    name="verify"
+                    value="email"
+                />
+                <label for="verify-email">Via an email</label>
+            </div>
             <button>Submit</button>
         </form>
     </body>
