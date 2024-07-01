@@ -49,6 +49,10 @@ textarea:focus {
     border-color: rgb(32, 5, 63);
 }
 
+textarea {
+    resize: none;
+}
+
 button {
     display: block;
     font: inherit;
@@ -73,4 +77,12 @@ button:hover {
 .form-control-inline input {
     width: auto;
     margin-right: 0.5rem;
+}
+
+button {
+    margin-right: 1.5rem;
+}
+
+#btn {
+    display: flex;
 }
