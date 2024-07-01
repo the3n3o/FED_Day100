@@ -93,6 +93,7 @@ textarea {
     font: inherit;
     border: 1px solid rgb(107, 107, 107);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn-clear {
@@ -100,7 +101,16 @@ textarea {
     color: var(--form-btn-color);
 }
 
+.btn-clear:hover {
+    background-color: rgb(208, 215, 230);
+}
+
 .btn-submit {
     background-color: var(--form-btn-color);
     color: white;
+}
+
+.btn-submit:hover {
+    background-color: rgb(69, 89, 129);
+    border-color: rgb(69, 89, 129);
 }
