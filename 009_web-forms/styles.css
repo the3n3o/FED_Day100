@@ -13,12 +13,25 @@ form {
     border-radius: 6px;
 }
 
+h1 {
+    text-align: center;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 label {
     margin-bottom: 0.5rem;
     display: block;
 }
 
-input {
+input,
+textarea,
+select {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
@@ -29,7 +42,8 @@ input {
     color: rgb(61, 58, 58);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     background-color: rgb(219, 190, 253);
     color: rgb(32, 5, 63);
     border-color: rgb(32, 5, 63);

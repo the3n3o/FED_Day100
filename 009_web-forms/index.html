@@ -15,64 +15,153 @@
         <title>HTML Forms</title>
     </head>
     <body>
-        <form action="/009_web-forms/" method="get">
-            <label for="username">Your Name</label>
-            <input type="text" name="user-name" id="username" />
-            <label for="useremail">Your email address</label>
-            <input type="email" name="user-email" id="useremail" />
-            <label for="userage">Your age</label>
-            <input type="number" step="1" name="user-age" id="userage" />
-            <label for="userpassword">Your password</label>
-            <input type="password" name="user-password" id="userpassword" />
-            <label for="userbirthdate">Your birthdate</label>
-            <input type="date" name="user-birthdate" id="userbirthdate" />
-            <hr />
-            <h2>How should we verify your account?</h2>
+        <header>
+            <h1>Demo Form</h1>
+        </header>
+        <main>
+            <form action="/009_web-forms/" method="get">
+                <section>
+                    <h2>Your personal deata</h2>
+                    <ul>
+                        <li>
+                            <label for="username">Your Name</label>
+                            <input type="text" name="user-name" id="username" />
+                        </li>
 
-            <div class="form-control-inline">
-                <input
-                    type="radio"
-                    id="verify-text-message"
-                    name="verify"
-                    value="text-message"
-                />
-                <label for="verify-text-message">Via text message (SMS)</label>
-            </div>
-            <div class="form-control-inline">
-                <input
-                    type="radio"
-                    id="verify-phone"
-                    name="verify"
-                    value="phone"
-                />
-                <label for="verify-phone">Via a phone call</label>
-            </div>
-            <div class="form-control-inline">
-                <input
-                    type="radio"
-                    id="verify-email"
-                    name="verify"
-                    value="email"
-                />
-                <label for="verify-email">Via an email</label>
-            </div>
+                        <li>
+                            <label for="useremail">Your email address</label>
+                            <input
+                                type="email"
+                                name="user-email"
+                                id="useremail"
+                            />
+                        </li>
 
-            <div class="form-control-inline">
-                <input type="checkbox" id="agree-terms" name="terms" />
-                <label for="agree-terms">Agree to terms?</label>
-                <!-- checkbox 는 value가 on과 누락으로 서버에 제출됨 -->
-            </div>
+                        <li>
+                            <label for="userpassword">Your password</label>
+                            <input
+                                type="password"
+                                name="user-password"
+                                id="userpassword"
+                            />
+                        </li>
+                    </ul>
+                </section>
 
-            <div class="form-control-inline">
-                <input type="checkbox" id="contact-email" name="contact" value="email" />
-                <label for="contact-email">Contact me via email</label>
-            </div>
-            <div class="form-control-inline">
-                <input type="checkbox" id="contact-phone" name="contact" value="phone" />
-                <label for="contact-phone">Contact me via phone</label>
-            </div>
-            <!-- checkbox를 on이라는 하나의 값이 아닌 여러 값을 가져야 할 때는 value를 넣어주면 그 값으로 제출된다.  -->
-            <button>Submit</button>
-        </form>
+                <section>
+                    <h2>More details</h2>
+                    <ul>
+                        <li>
+                            <label for="userage">Your age</label>
+                            <input
+                                type="number"
+                                step="1"
+                                name="user-age"
+                                id="userage"
+                            />
+                        </li>
+                        <li>
+                            <label for="userbirthdate">Your birthdate</label>
+                            <input
+                                type="date"
+                                name="user-birthdate"
+                                id="userbirthdate"
+                            />
+                        </li>
+                        <li>
+                            <label for="usercolor">Your favorite color?</label>
+                            <select name="user-color" id="usercolor">
+                                <option value="blue">Blue</option>
+                                <option value="red">Red</option>
+                                <option value="yellow">Yellow</option>
+                            </select>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <label for="usermessage" name="user-message"
+                        >Your message</label
+                    >
+                    <textarea name="user-message" id="usermessage"></textarea>
+                    <!-- textarea의 경우 닫는 태그가 있는데 이것은 역사적이유 때문. 안에 따로 컨텐츠는 들어가지 않음. 그냥 이런거임 -->
+                </section>
+
+                <section>
+                    <h2>How should we verify your account?</h2>
+                    <ul>
+                        <li class="form-control-inline">
+                            <input
+                                type="radio"
+                                id="verify-text-message"
+                                name="verify"
+                                value="text-message"
+                            />
+                            <label for="verify-text-message"
+                                >Via text message (SMS)</label
+                            >
+                        </li>
+                        <li class="form-control-inline">
+                            <input
+                                type="radio"
+                                id="verify-phone"
+                                name="verify"
+                                value="phone"
+                            />
+                            <label for="verify-phone">Via a phone call</label>
+                        </li>
+                        <li class="form-control-inline">
+                            <input
+                                type="radio"
+                                id="verify-email"
+                                name="verify"
+                                value="email"
+                            />
+                            <label for="verify-email">Via an email</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>How should we contact you?</h2>
+                    <ul>
+                        <li class="form-control-inline">
+                            <input
+                                type="checkbox"
+                                id="contact-email"
+                                name="contact"
+                                value="email"
+                            />
+                            <label for="contact-email"
+                                >Contact me via email</label
+                            >
+                        </li>
+                        <li class="form-control-inline">
+                            <input
+                                type="checkbox"
+                                id="contact-phone"
+                                name="contact"
+                                value="phone"
+                            />
+                            <label for="contact-phone"
+                                >Contact me via phone</label
+                            >
+                        </li>
+                        <!-- checkbox를 on이라는 하나의 값이 아닌 여러 값을 가져야 할 때는 value를 넣어주면 그 값으로 제출된다.  -->
+                    </ul>
+                </section>
+                <hr>
+                <section>
+                    <div class="form-control-inline">
+                        <input type="checkbox" id="agree-terms" name="terms" />
+                        <label for="agree-terms">Agree to terms?</label>
+                        <!-- checkbox 는 value가 on과 누락으로 서버에 제출됨 -->
+                    </div>
+                </section>
+                <section>
+                    <button>Submit</button>
+                </section>
+            </form>
+        </main>
     </body>
 </html>
