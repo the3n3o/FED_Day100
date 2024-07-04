@@ -14,6 +14,7 @@ let job = {
     place: "New York",
     salary: 50000,
 };
+
 /* 
 object (객체)
 {} 안에 레이블(key)들을 정해주고 : 뒤에 value를 넣어줌
@@ -28,6 +29,18 @@ alert(hobbies[0]);
 alert(job.place);
 /* obj.value */
 
+let adultYears;
+
+function calculateAdultYears() {
+    return age - 18
+}
+
+/* 함수안에서의 변수는 함수안에서만 정의된다. */
+
+adultYears = calculateAdultYears();
+alert(adultYears);
+
 age = 45;
-let adultYears = age - 18;
+adultYears = calculateAdultYears();
+
 alert(adultYears);
