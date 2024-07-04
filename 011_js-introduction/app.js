@@ -31,16 +31,24 @@ alert(job.place);
 
 let adultYears;
 
-function calculateAdultYears() {
-    return age - 18
+function calculateAdultYears(userAge) {
+    return userAge - 18
 }
+/* =
+function calculaterAdultYears(userAge) {
+let result;
+result = userAge - 18;
+return result;
+}
+*/
 
 /* 함수안에서의 변수는 함수안에서만 정의된다. */
 
-adultYears = calculateAdultYears();
+adultYears = calculateAdultYears(age);
+/* = adultYears = calculateAdultYears(32); */
 alert(adultYears);
 
-age = 45;
-adultYears = calculateAdultYears();
+/* age = 45; */
+adultYears = calculateAdultYears(45);
 
 alert(adultYears);
