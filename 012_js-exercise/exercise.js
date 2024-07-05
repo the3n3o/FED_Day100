@@ -11,25 +11,29 @@
 
 let courseName = "FED DAY 100";
 let coursePrice = 19000;
-let mainGoals = ["Goal 1", "Goal 2", "Goal 3"];
+let courseGoals = ["Goal 1", "Goal 2", "Goal 3"];
 
 // 2) Output ("alert") the three variable values
 
 alert(courseName);
 alert(coursePrice);
-alert(mainGoals[0]);
+alert(courseGoals[0]);
 
 // 3) Try "grouping" the three variables together and still output their values thereafter
 
-let courseDetails = {
+let onlineCourse = {
     name: courseName,
     price: coursePrice,
     goals: courseGoals,
 };
 
+alert(onlineCourse.name);
+alert(onlineCourse.price);
+alert(onlineCourse.goals);
+
 // 4) Also output the second element in your "main goals" variable
 
-alert(courseDetails.goals[1]);
+alert(onlineCourse.goals[1]);
 
 // 5) Add a custom command that does the following:
 //    - Use your "main goals" variable and access an element by its identifier
@@ -39,11 +43,16 @@ alert(courseDetails.goals[1]);
 //      with ANY list of values
 //    - The custom command should provide the accessed value (i.e. the list element)
 
-function getGoals(goals, index) {
-    return goals[index];
+function getListItem(array, arrayindex) {
+    return array[arrayindex];
 }
 
 // 6) Execute your custom command from (5) and output ("alert") the result
 
-let output = getGoals(mainGoals,1);
-alert(output);
+let firstGoal = getListItem(courseGoals,0);
+let secondGoal = getListItem(courseGoals,1);
+let thirdGoal = getListItem(courseGoals,2);
+
+alert(firstGoal);
+alert(secondGoal);
+alert(thirdGoal);
