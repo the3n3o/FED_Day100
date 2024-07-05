@@ -49,9 +49,9 @@ function getListItem(array, arrayindex) {
 
 // 6) Execute your custom command from (5) and output ("alert") the result
 
-let firstGoal = getListItem(courseGoals,0);
-let secondGoal = getListItem(courseGoals,1);
-let thirdGoal = getListItem(courseGoals,2);
+let firstGoal = getListItem(onlineCourse.goals,0);
+let secondGoal = getListItem(onlineCourse.goals,1);
+let thirdGoal = getListItem(onlineCourse.goals,2);
 
 alert(firstGoal);
 alert(secondGoal);
