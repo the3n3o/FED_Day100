@@ -59,9 +59,6 @@ let g = '2' * 3;
 
 let userName = 'Neo';
 console.log(userName.length);
-// 위 변수에서 strings가 object가 아님에도 불구하고 메서드를 사용할 수 있는 이유는 자바스크립트 내장 기능으로서 생성되는 모든 문자열을 보이지않는 obj로 wrap 하기 때문이다.
+// 위 변수에서 strings가 object가 아님에도 불구하고 메서드를 사용할 수 있는 이유는 자바스크립트 내장 기능으로서 생성되는 모든 문자열을 보이지않는 오브젝트로 wrap 하기 때문이다.
 
 console.log(userName.toUpperCase());
-
-let hobbyies = ['Sports', 'Cooking'];
-console.log(hobbyies.length);
