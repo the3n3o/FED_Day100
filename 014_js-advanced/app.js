@@ -28,3 +28,21 @@ document.body.children[1].children[0].href = 'https://google.com';
 // document.getElementByld('some-id');
 // document.querySelector('.some-class');
 // 혹은 위와 같이 Query Elements 방식으로 브라우저가 유저에게 제공하는 일부 유틸리지 함수(CSS로 치자면 id나 class와 같은)로 특정 명령을 사용해서 특정 요소를 쿼리 할 수도 있다.
+
+
+// DOM 드릴링
+
+console.dir(document.body.children[0]);
+console.dir(document.body.firstChild);
+console.dir(document.body.firstElementChild);
+// firstChild 의 경우 DOM에 HTML 요소만 있는 것이 아니라 브라우저에 의해 저장된 텍스트도 있기 때문에 결과가 #text로 나온다.
+
+console.dir(document.body.childNodes);
+// 노드는 기본적으로 텍스트와 HTML 요소이기 때문에 HTML 컨텐츠가 노드로 해석될 수 있다. (위 코드를 실행하면 노드리스트가 나온다.)
+console.dir(document.body.childNodes[1]);
+// > h1 
+
+// 즉 firstChild 는 첫번째 노드를 뜻하고 fisrtElementChild 는 첫번째 요소를 뜻한다.
+
+// DOM의 텍스트노드에는 HTML 문서에 공백 데이터들도 포함이 된다.
+// 그래서 firstChild 의 값을 살펴보면 data: "\n    " 으로 표시되어있다. 이는 <body>태그 이후의 줄 바꿈과 공백을 뜻한다.
