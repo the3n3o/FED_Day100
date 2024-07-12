@@ -94,8 +94,10 @@ anchorElement.href = 'https://naver.com'
 // 1. Create the new element
 
 let newAnchorElement = document.createElement('a');
-newAnchorElement.href = 'https://google.com';
+// createElement
+newAnchorElement.href = 'https://google.com'; 
 newAnchorElement.textContent = 'google';
+// 1번에서는 'a' 를 createElement 했지만 html 문서에서는 나타나지 않음.
 
 // 2. Get access to the parent element that should hold the new element
 
@@ -104,3 +106,4 @@ let firstParagraph = document.querySelector('p');
 // 3. Insert the new element into the parent element content
 
 firstParagraph.append(newAnchorElement);
+// 2번에서 선언 해준 첫번째 p태그.append(추가) -> 매개변수를 (1번인 newAnchorElement)
