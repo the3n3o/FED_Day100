@@ -97,7 +97,7 @@ let newAnchorElement = document.createElement('a');
 // createElement
 newAnchorElement.href = 'https://google.com'; 
 newAnchorElement.textContent = 'google';
-// 1번에서는 'a' 를 createElement 했지만 html 문서에서는 나타나지 않음.
+// 1번에서는 'a' 를 createElement 했지만 html 문서에서는 나타나지 않음
 
 // 2. Get access to the parent element that should hold the new element
 
