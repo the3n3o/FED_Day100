@@ -58,7 +58,7 @@ console.dir(document.body.childNodes[1]);
 
 
 ///////////////////////////////////////////////////////////
-// HTML 에서 새로운 요소들이 추가가 된다면 기존에 드릴링으로 작성했던 코드들이 오류를 일으킬 수 있다. (app.js:13 참고)
+// HTML 에서 새로운 요소들이 추가가 된다면 기존에 드릴링으로 작성했던 코드들이 오류를 일으킬 수 있다. (app.js:17 참고)
 // 이를 해결하는 2가지 방법이 있다.
 
 // document 객체의 getElementById 메서드 사용하기. (id 방식)
@@ -107,3 +107,15 @@ let firstParagraph = document.querySelector('p');
 
 firstParagraph.append(newAnchorElement);
 // 2번에서 선언 해준 첫번째 p태그.append(추가) -> 매개변수를 (1번인 newAnchorElement)
+
+/* let parentElement = firstParagraph.parentNode;
+parentElement.insertBefore(newAnchorElement,firstParagraph); */
+
+// firstParagraph.insertAdjacentElement('afterend', newAnchorElement);
+// insertAdjacentElemnet 의 매개변수 4가지 
+// beforebegin : 요소 앞에 삽입
+// afterbegin : 요소 안쪽 첫번째 자식으로 삽입
+// beforeend : 요소 안쪽 마지막 자식으로 삽입
+// afterend : 요소 뒤에 삽입
+
+// 이해하기 쉽게 태그를 <begin>content<end> 로 생각하면 될듯? 
