@@ -12,7 +12,7 @@ let inputTextElement = document.querySelector('input');
 
 function  retrieveUserInput(event) {
     /* let enteredText = inputTextElement.value; */
-    let enteredText = event.target.value
+    let enteredText = event.target.value;
     console.log(enteredText);
     console.log(event);
 }
