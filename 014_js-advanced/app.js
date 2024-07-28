@@ -112,10 +112,21 @@ firstParagraph.append(newAnchorElement);
 parentElement.insertBefore(newAnchorElement,firstParagraph); */
 
 // firstParagraph.insertAdjacentElement('afterend', newAnchorElement);
-// insertAdjacentElemnet 의 매개변수 4가지 
+// insertAdjacentElement 의 매개변수 4가지 
 // beforebegin : 요소 앞에 삽입
 // afterbegin : 요소 안쪽 첫번째 자식으로 삽입
 // beforeend : 요소 안쪽 마지막 자식으로 삽입
 // afterend : 요소 뒤에 삽입
 
 // 이해하기 쉽게 태그를 <begin>content<end> 로 생각하면 될듯? 
+
+// remove it
+let firstH1Element = document.querySelector('H1');
+firstH1Element.remove();
+// firstH1Element.parentElement.removeChild(firstH1Element); 
+// for older browser
+
+// move elements
+firstParagraph.parentElement.append(firstParagraph);
+// 새로만든 요소가 아닌기존에 있던 요소를 추가해주는 것이기 때문에 브라우저가 자동으로 삭제하고 move 시켜준다.
+
