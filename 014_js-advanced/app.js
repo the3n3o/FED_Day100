@@ -130,3 +130,6 @@ firstH1Element.remove();
 firstParagraph.parentElement.append(firstParagraph);
 // 새로만든 요소가 아닌기존에 있던 요소를 추가해주는 것이기 때문에 브라우저가 자동으로 삭제하고 move 시켜준다.
 
+// innerHTML (textContent 랑은 다르게 html 요소도 출력된다.)
+
+firstParagraph.innerHTML = 'Hi! This is <strong>Important!</strong>';
