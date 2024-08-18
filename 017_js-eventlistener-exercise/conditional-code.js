@@ -3,6 +3,22 @@ const myName = 'Neo';
 if (myName === 'Neo') {
     console.log('hello');
 }
+
+let isLoggedIn = true;
+
+if (!isLoggedIn) {
+    console.log('User is NOT logged in!')
+} else {
+    console.log('User is logged in!')
+}
+
+const enteredUserName = 'Neo'; // 빈문자열 & 0은 False 처리
+
+if (enteredUserName) {
+    // = (enteredUserName.length > 0)
+    console.log('Input is valid!');
+}
+
 // if (부울값)
 
 // 5 == 5 true

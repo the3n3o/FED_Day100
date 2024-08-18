@@ -11,9 +11,24 @@ function changeRemainingChars(event) {
 
     remainingCharsElement.textContent = remainingChars;
     
-    if (remainingChars <= 10) {    
+    if (remainingChars === 0) {    
+    // 가장 특정성이 강한 조건 : 남은 문자가 정확히 0일 때
+    inputCharsElement.classList.add('error');
+    remainingCharsElement.classList.add('error');
+    inputCharsElement.classList.remove('warning');
+    remainingCharsElement.classList.remove('warning');
+    
+    } else if (remainingChars <= 10) {
+    // 남은 문자가 1부터 10까지일 때
     inputCharsElement.classList.add('warning');
     remainingCharsElement.classList.add('warning');
+    inputCharsElement.classList.remove('error');
+    remainingCharsElement.classList.remove('error');
+
+    } else {
+    // 남은 문자가 11 이상일 때 (즉 if, else if가 거짓일 때)
+    inputCharsElement.classList.remove('error', 'warning');
+    remainingCharsElement.classList.remove('error', 'warning');
     }
 }
 
