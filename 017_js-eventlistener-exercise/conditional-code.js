@@ -1,6 +1,6 @@
 const myName = 'Neo';
 
-if (true) {
+if (myName === 'Neo') {
     console.log('hello');
 }
 // if (부울값)

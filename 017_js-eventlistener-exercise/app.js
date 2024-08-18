@@ -10,6 +10,11 @@ function changeRemainingChars(event) {
     const remainingChars = maxAllowedChars - enteredTextLength;
 
     remainingCharsElement.textContent = remainingChars;
+    
+    if (remainingChars <= 10) {    
+    inputCharsElement.classList.add('warning');
+    remainingCharsElement.classList.add('warning');
+    }
 }
 
 inputCharsElement.addEventListener('input',changeRemainingChars);
@@ -23,6 +28,4 @@ remainingCharsElement.className = 'warning'; */
 // 이 방법은 기존 class가 있다면 overwrite 하는 단점이 있음.
 // 그래서 아래와 같은 방법을 추천함
 
-inputCharsElement.classList.add('warning');
-remainingCharsElement.classList.add('warning');
 // 빼는 방법은 .remove
