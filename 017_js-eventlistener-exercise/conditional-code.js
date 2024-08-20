@@ -15,7 +15,7 @@ if (!isLoggedIn) {
 const enteredUserName = 'Neo'; // 빈문자열 & 0은 False 처리
 
 if (enteredUserName) {
-    // = (enteredUserName.length > 0)
+    // = (enteredUserName.length > 0) 즉 true
     console.log('Input is valid!');
 }
 
