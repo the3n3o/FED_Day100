@@ -43,32 +43,53 @@ main {
     border-color: transparent;
 }
 
-ol {
+#game-configuration ol {
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
+/* Flex 로 display 하는게 맞는지? */
 
-li {
+#game-configuration li {
     background-color: rgb(238, 218, 255);
     text-align: center;
     list-style-type: none;
     padding: 0.5rem 6rem;
     box-shadow: 4px 4px 4px rgba(122, 118, 122, 0.15);
 }
+/* box-shadow 확인 */
 
 #startbtn {
     display: block;
     margin: 2rem auto 0 auto;
 }
 
-aside {
-    display: none;
-}
-/* 레이아웃을 위해 임시로 none 처리 */
 
-#active-game {
-    display: none;
-}
 /* 레이아웃을 위해 임시로 none 처리 */
+aside {
+    background-color: white;
+    text-align: center;
+    /* display: none; */
+}
+/* JS로 유효성 검사 필요  */
+
+
+/* 레이아웃을 위해 임시로 none 처리 */
+#active-game {
+    /* display: none; */
+    text-align: center;
+}
+
+#active-game ol {
+    display: grid;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+#active-game li {
+    background-color: rgb(238, 218, 255);
+    height: 10rem;
+    width: 10rem;
+}
