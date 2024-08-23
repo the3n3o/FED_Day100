@@ -82,14 +82,17 @@ aside {
 }
 
 #active-game ol {
+    margin: 0 auto;
     display: grid;
     list-style-type: none;
     padding: 0;
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+    height: 25rem;
+    width: 25rem;
 }
 
 #active-game li {
     background-color: rgb(238, 218, 255);
-    height: 10rem;
-    width: 10rem;
 }
