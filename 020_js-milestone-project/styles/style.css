@@ -1,8 +1,13 @@
 body {
     margin: 0;
     font-family: "Open-Sans", sans-serif;
+    font-weight: bold;
     color: rgb(44, 41, 44);
     background-color: rgb(247, 239, 247);
+}
+
+main {
+    margin-top: 4rem;
 }
 
 #main-header {
@@ -37,3 +42,33 @@ body {
     background-color: rgb(230, 201, 252);
     border-color: transparent;
 }
+
+ol {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+li {
+    background-color: rgb(238, 218, 255);
+    text-align: center;
+    list-style-type: none;
+    padding: 0.5rem 6rem;
+    box-shadow: 4px 4px 4px rgba(122, 118, 122, 0.15);
+}
+
+#startbtn {
+    display: block;
+    margin: 2rem auto 0 auto;
+}
+
+aside {
+    display: none;
+}
+/* 레이아웃을 위해 임시로 none 처리 */
+
+#active-game {
+    display: none;
+}
+/* 레이아웃을 위해 임시로 none 처리 */
