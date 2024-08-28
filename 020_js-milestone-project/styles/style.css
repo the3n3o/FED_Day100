@@ -66,16 +66,13 @@ main {
 }
 
 
-/* 레이아웃을 위해 임시로 none 처리 */
-aside {
-    display: none;
+.modal {
     background-color: white;
     text-align: center;
 }
 /* JS로 유효성 검사 필요  */
 
 
-/* 레이아웃을 위해 임시로 none 처리 */
 #active-game {
     display: none;
     text-align: center;
