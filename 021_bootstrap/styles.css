@@ -1,0 +1,44 @@
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.navbar {
+  padding: 0.5rem 20%;
+  border-bottom: 2px solid #4b4b4b;
+}
+
+#carousel-example {
+  width: 60%;
+  height: 30rem;
+  margin: 0 auto;
+}
+
+#carousel-example img {
+  width: auto;
+  height: 30rem;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+  #carousel-example img {
+    width: 100%;
+    max-width: 120rem;
+  }
+}
+
+#newsletter-signup {
+  max-width: 30rem;
+  margin: 4rem auto;
+  font-weight: bold;
+}
+
+/* ----------------------- */
+
+section {
+  width: 60%;
+  height: 30rem;
+  margin: 0 auto;
+}
